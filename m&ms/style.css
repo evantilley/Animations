@@ -1,0 +1,74 @@
+body{
+    min-width: 800px;
+}
+.container {
+    position:relative;
+    width: 100%;
+    max-width: 840px;
+}
+.container img{
+    max-width: 100%;
+}
+.blue{
+    width: 5.4%;
+    position: absolute;
+    top: 30.4%;
+    left:38.9%;
+}
+.brown{
+    width: 5.4%;
+    position: absolute;
+    top: 30.4%;
+    left: 56.2%;
+}
+.red{
+    width: 5.5%;
+    position: absolute;
+    top: 30.4%;
+    left:44.7%;
+}
+.green{
+    width: 5.4%;
+    position: absolute;
+    top: 30.5%;
+    left: 50.5%;
+}
+.reset{
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+.anim1{
+    animation-name: anim1, anim1, anim1;
+    animation-delay: 0s, 1s, 2s;
+    animation-duration: .5s, 1s, 1.5s;
+    animation-iteration-count: 2, 1, 1;
+    animation-timing-function: linear;
+}
+.anim2{
+    animation-name: anim2, anim2, anim3;
+    animation-delay: 0s, 1s, 2s;
+    animation-duration: .5s, 1s, 1.5s;
+    animation-iteration-count: 2, 1, 1;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes anim1{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(359deg);}
+}
+
+@keyframes anim2{
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(449deg);}
+}
+
+@keyframes anim3{
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+
